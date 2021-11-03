@@ -52,7 +52,7 @@ const Map = ({setcoordinates,setbounds,coordinates,places}) => {
                     className="col text-center"
                     style={{ width: "100%",height:'20px'}}
                 ></div>
-            <GoogleMapReact bootstrapURLKeys={{key:'AIzaSyDnKopjozCpJvQH_TbstFEGwhcxtWv4S3U'}}
+            <GoogleMapReact bootstrapURLKeys={{key:GOOGLE MAP  API KEY}}
                 defaultCenter={coordinates}
                 center={coordinates}
                 defaultZoom={16}
