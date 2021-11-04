@@ -7,7 +7,7 @@ import {CssBaseline,Grid}from '@material-ui/core';
 import useStyles from './style3.js';
 import mapStyles from "./mapStyles";
 import { borderRadius } from '@mui/system';
-const Map = ({setcoordinates,setbounds,coordinates,places}) => {
+const Map = ({setcoordinates,setbounds,coordinates,places,weatherdata}) => {
     const [mapStyle, setMapStyle] = useState([]);
 
     const updateMapStyle = (style = "") => setMapStyle(mapStyles[style] || []);
@@ -104,6 +104,15 @@ const Map = ({setcoordinates,setbounds,coordinates,places}) => {
                        </div>
                     </Grid>
                 )})}
+                {weatherdata?.list?.map((data,i)=>{
+                    console.log(data);
+                    return(
+                        <div key={i} lat={data.coord.lat} lng={data.coord.lon}>
+                            <img src={`https://openweathermap.org/img/w/${data.weather[0].icon}.png`} alt="sorry"/>
+                            </div>
+                    )
+
+                })}
                 </Grid>
             </GoogleMapReact>
         
