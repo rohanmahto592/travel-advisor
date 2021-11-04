@@ -26,8 +26,7 @@ npm start
 ---
 ## `Note`
 
--Use your own API KEY  for Google AUTH from `console.cloud.google.com`
--For Travel API `go to rapid Api and search for travel advisor, then go to hotels,copy the Api KEY and use that API KEY `
+-Use your own API KEY  for Google AUTH from `console.cloud.google.com` and for  Travel API `go to rapid Api and search for travel advisor, then go to hotels,copy the Api KEY and use that API KEY `
 
 ## `Screenshot`
 <img width="1440" alt="Screenshot 2021-11-05 at 12 14 57 AM" src="https://user-images.githubusercontent.com/68339841/140401076-a4289564-0be8-4cca-b237-e0ce4e93982d.png">
