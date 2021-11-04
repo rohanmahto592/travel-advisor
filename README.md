@@ -3,8 +3,7 @@
 | Project | Link |
 | ------ | ------ |
 | Website | https://travel-advisor2.netlify.app/ 
-
-| Video Demo | https://drive.google.com/drive/folders/1Bv9xIOe9Vp9eDQhTgyY_OZA4SGo_aJuP?usp=sharing
+| Video Demo | https://drive.google.com/file/d/1shnXguSXUWs4tl3QVJEX4HxeZWrHLP51/view?usp=sharing
 
 ---
 ## Features
