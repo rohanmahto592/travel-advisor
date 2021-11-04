@@ -4,7 +4,7 @@ import {CssBaseline,Grid}from '@material-ui/core';
 import Header from './component/Header/Header';
 import List from './component/List/List';
 import Map from './component/Map/Map';
-import { getPlacesData } from './api/index.js';
+import { getPlacesData,weatherData } from './api/index.js';
 import {useEffect,useState} from 'react';
 function App() {
   const[type,setType]=useState("restaurants");
@@ -14,6 +14,7 @@ function App() {
   const[childClicked,setChildClicked]=useState(null);
   const[isLoading,setIsLoading]=useState(false);
   const[rating,setRating]=useState('');
+  const[weatherdata,setweatherdata]=useState([]);
   const[filteredplaces,setfilteredplaces]=useState([]);
 
   //forcurrent position that will be called once while the map get loaded
@@ -32,6 +33,9 @@ function App() {
     if(bounds.sw && bounds.ne)
     {
     setIsLoading(true);
+      weatherData(coordinates.lat,coordinates.lng).then((data)=>{
+      setweatherdata(data);
+    });
     getPlacesData(type,bounds.sw,bounds.ne).then((data)=>{
       //console.log(data);
       //console.log(coordinates);
@@ -60,7 +64,7 @@ function App() {
         <Grid item xs={12} md={8}>
           <Map
           setcoordinates={setcoordinates} setbounds={setbounds} coordinates={coordinates}
-          places={filteredplaces.length?filteredplaces:places}/>
+          places={filteredplaces.length?filteredplaces:places},weatherdata={weatherdata}/>
         </Grid>
 
       </Grid>
