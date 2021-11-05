@@ -5,6 +5,8 @@
 | Website | https://travel-advisor2.netlify.app/ 
 | Video Demo | https://drive.google.com/file/d/1shnXguSXUWs4tl3QVJEX4HxeZWrHLP51/view?usp=sharing
 
+`Note`
+-Open website in `brave browser` for better experience
 ---
 ## Features
 - Live restaurant,hotels,Attractions nearby  your location.
